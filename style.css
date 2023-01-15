@@ -14,7 +14,7 @@ html {
   font-sizing: 15px;
 }
 body {
-  background: #F0f2FF;
+  background:rgba(21, 21, 21, 0.93);
   font-family: "Poppins", sans-serif;
 }
 .sr-only {
@@ -44,16 +44,27 @@ h2 {
 }
 /* Links e Buttons =====================*/
 a {
-  color: var(--blue);
   text-decoration: none;
+  align-content: center;
 }
 a:hover {
-  color: var(--light-blue);
+  
+}
+#icon-btnNew:hover > #txtBtnNew{
+    visibility: visible;
+}
+#txtBtnNew{
+  color: #127832;
+  display: inline;
+  position: absolute;
+  margin-left: 0.3rem;
+  margin-top: 0.2rem;
 }
 button {
   width: 100%;
   heigth: 50px;
   color: #127302;
+  background: rgba(21, 21, 21, 0.98);
   padding: 0.2rem;
   border: 2px #127302 solid;
   border-radius: 0.25rem;
@@ -137,7 +148,7 @@ header {
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
-  color: #4b4b4b;
+  color: white;
 }
 table thead tr th:first-child,
 table thead tr td:first-child {
@@ -148,29 +159,37 @@ table thead tr td:last-child {
   border-radius: 0 0.25rem 0.25rem 0;
 }
 table thead th {
-  background: white;
+  background: #125302;
   font-weight: normal;
   padding: 1rem 2rem;
   text-align: left;
 }
 table tbody tr {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 table tbody tr:hover {
   opacity: 1;
 }
 table tbody td {
-  background: white;
+  background: rgba(21, 110, 21, .98);
   padding: 1rem 2rem;
 }
+table tbody tr th:first-child,
+table tbody tr td:first-child{
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+table tbody tr th:last-child,
+table tbody tr td:last-child{
+  border-radius: 0 0.25rem 0.25rem 0;
+}
 td.description {
-  color: var(--dark-blue);
+  color: white;
 }
 td.income {
-  color: #12a454;
+  color: #12f454;
 }
 td.expense {
-  color: var(--red);
+  color: rgba(150, 3, 10, 0.88);
 }
 
 /* Modal =================================*/
@@ -192,7 +211,8 @@ td.expense {
   visibility: visible;
 }
 .modal {
-  background: #f0f2f5;
+  background: rgba(21, 21, 21, 0.98);
+  color: white;
   padding: 2.4rem;
   position: relative;
   z-index: 1;
@@ -203,6 +223,7 @@ td.expense {
   max-width: 500px;
 }
 #form h2 {
+  color: white;
   margin-top: 0;
 }
 input {
@@ -210,6 +231,8 @@ input {
   border-radius: 0.2rem;
   padding: 0.8rem;
   width: 100%;
+  background: rgba(2, 2, 2, 0.60);
+  color: white;
 }
 .input-group {
   margin-top: 0.8rem;
@@ -231,7 +254,7 @@ input {
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: var(--dark-blue);
+  color: white;
   font-weight: normal;
   opacity: 0.7;
 }

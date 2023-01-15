@@ -75,7 +75,7 @@ const DOM = {
         const amount = Utils.formatCurrency(transaction.amount)
         const html = `
             <td class="description">${transaction.description}</td>
-            <td class="${CSSclass}">${transaction.amount}</td>
+            <td class="${CSSclass}">${Utils.formatCurrency(transaction.amount)}</td>
             <td class="date">${transaction.date}</td>
             <td>
                 <img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover Transação"/>

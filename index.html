@@ -48,7 +48,10 @@
 
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
-            <a href="#" class="button new" onclick="Modal.open()">+ Nova Transação</a>
+            <a href="#" class="button new" onclick="Modal.open()"> 
+                <img id="icon-btnNew" src="./assets/plus.svg" alt="Nova Transação">
+                <div id="txtBtnNew">Nova Transação</div>
+            </a>
 
             <table id="data-table">
                 <thead>
@@ -56,6 +59,7 @@
                         <th>Descrição</th>
                         <th>Valor</th>
                         <th>Data</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="tbody">
